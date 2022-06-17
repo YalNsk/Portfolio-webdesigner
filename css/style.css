@@ -1,0 +1,119 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: rgb(226, 224, 224);
+    font-size: 'Montserrat' 'sans-serif';
+    font-size: 15px;
+}
+
+.presentation {
+    display: flex;
+    background: url(../img/72.jpg);
+    background-size: cover;
+}
+
+
+h1, h2 {
+    color: rgb(252, 252, 39);
+}
+
+
+
+article {
+display: flex;
+margin: 50px;
+padding: 10px;
+}
+
+.yael {
+    height: 350px;
+    width: 600px;
+    background: rgba(187, 187, 187, 0.189);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display:block;
+    text-align: center;
+}
+
+.yael img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 15px;
+    border: solid 1px #ffff00;
+    margin: 12px;
+}
+
+.yael h1 {
+    font-size: 2rem;
+}
+
+p {
+    padding: 10px;
+}
+
+.competences {
+    display: flex;
+    flex-direction: column;
+    background: rgba(187, 187, 187, 0.189);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    text-align: center;
+    width: 400px;
+}
+
+.competences img {
+    width: 50px;
+}
+
+.comp_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comp_img_html_css {
+    display: flex;
+}
+
+/* .comp_img .comp_img_inner {
+    display: flex;
+    flex-direction: row;
+} */
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    background: rgba(187, 187, 187, 0.189);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    text-align: center;
+}
+
+@keyframes background { 
+    0% {
+    background-position: 0% 50%;
+    }
+    
+    50% {
+    background-position: 100% 50%;
+    }
+    
+    100% {
+    background-position: 0% 50%;
+    }
+}
