@@ -22,6 +22,7 @@ nav {
     background: #000000;
     color: #fafafa;
     box-shadow: inset 0px -1px 0px #ededed;
+    height: 10vh;
 }
 
 .nav-icon {
@@ -46,8 +47,7 @@ nav {
 }
 
 .nav-icon img {
-    transform: rotate(-17deg) translateX(15px);
-    animation: rotate 2s forwards;
+
 }
 
 .hamburger {
@@ -56,6 +56,7 @@ nav {
 
 .navlinks-container {
     margin-left: auto;
+    z-index: 999;
 }
 
 .navlinks-container a {
@@ -180,32 +181,8 @@ nav {
 
 @media (max-width:500px) {
     .nav-icon img {
-        width: 30px;
+        width: 80%;
     }
 
-    .nav-icon span {
-        font-size: 20px;
-    }
-}
 
-@keyframes rotate {
-    20% {
-        transform: rotate(45deg);
-    }
-
-    40% {
-        transform: rotate(17deg);
-    }
-
-    60% {
-        transform: rotate(45deg);
-    }
-
-    80% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(30deg);
-    }
 }
