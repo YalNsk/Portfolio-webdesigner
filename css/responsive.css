@@ -3,6 +3,11 @@
     .banner {
         height: 100%;
     }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:900px) {
@@ -47,7 +52,7 @@ body {
     }
 
     .boutons button {
-        width: 60%;
+        width: 80%;
     }
 
     .header h1 {

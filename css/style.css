@@ -12,6 +12,7 @@ html {
 .body {
     font-size: 15px;
     background-color: #000000;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 2.5rem;
@@ -236,7 +237,7 @@ h1 {
     padding-bottom: 5%;
 }
 .container {
-    overflow: hidden;
+    position: relative;
     white-space: nowrap;
     scroll-behavior: smooth;
 }
@@ -244,6 +245,7 @@ h1 {
 .container img {
     width: 20%;
     z-index: 1;
+    
 }
 
 .container img:hover {
@@ -256,57 +258,30 @@ h1 {
 }
 
 .scrollLeft {
-    opacity: 1;
-    background: #191919;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     left: 0px;
 }
 .scrollRight {
-    background: #191919;
-    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     right: 0px;
 }
 
 .scrollLeft, .scrollRight {
     border: none;
-    width: 5%;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    animation: click_here 3s infinite  ;
+    border-radius: 50%;
+    background-color: #040404;
+    opacity: 0.5;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .scrollLeft:hover, .scrollRight:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 0.2s;
     cursor: pointer;
 }
 
-.slider {
-    display: flex;
-    align-items: center;
-}
-
-
-@keyframes click_here {
-    20% {
-        transform: translateX(2px);
-    }
-
-    40% {
-        transform: translateX(-2px);
-    }
-
-    60% {
-        transform: translateX(2px);
-    }
-
-    80% {
-        transform: translateX(-2px);
-    }
-
-    100% {
-        transform: translateX(2px);
-    }
-}
 
 
 
@@ -369,6 +344,12 @@ h1 {
     background: #fff800;
     transform: translate3d(110%, 0, 0);
     animation: masque 1s cubic-bezier(.17,.67,.83,.67);
+}
+
+.background {
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.5;
 }
 
 
