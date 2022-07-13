@@ -12,13 +12,18 @@ scrollLeft.addEventListener("click", function() {
     element.scrollLeft-=500;
 })
 
-var apercu = document.getElementsByClassName("item_show").getAttribute("src");
-var item1 = document.getElementsByClassName("item1");
-var item1_src = document.getElementsByClassName("item1").getAttribute("src");
 
-function change_image(){
-    
-    apercu.setAttribute("src", item1_src) 
-    
+var container = document.getElementById("container")
+var imgs = container.getElementsByTagName("img")
+var apercu = document.getElementById("apercu")
+var counter=0;
+
+for(let i=0;i<imgs.length;i++){
+let img=imgs[i]
+
+
+img.addEventListener("click",function(){
+apercu.src=this.src
+})
+
 }
-
